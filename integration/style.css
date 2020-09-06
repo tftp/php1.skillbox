@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 980px;
+    margin: auto;
+}
+
+.container > p {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+p.success {
+    color: darkgreen;
+    background-color: lightgreen;
+    font-weight: bold;
+    border-radius: 10px;
+}
+p.error {
+    color: darkred;
+    background-color: lightpink;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.menu {
+    background: #5f6a72;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    font-size: 18px;
+    padding: 10px;
+    display: inline-block;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background: gray;
+}
+
+.items {
+    margin: 20px 0;
+}
+
+figure {
+    background: #f0f0f0;
+    padding: 10px;
+    display: block;
+    width: 280px;
+    float: left;
+    margin: 0 10px;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 18px;
+    font-weight: bold;
+}
+figure img {
+    width: 225px;
+    max-height: 225px;
+}
+
+input {
+    padding: 5px;
+    font-size: 18px;
+}
+label {
+    font-weight: bold;
+}
+
+.btn {
+    color: #fff;
+    text-decoration: none;
+    background-color: forestgreen;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    border: 0;
+}
+
+.btn:hover {
+    background-color: darkslategrey;
+}
