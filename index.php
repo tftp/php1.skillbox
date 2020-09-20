@@ -2,9 +2,9 @@
 <pre>
   <?php
     $anyVar = 'Hello any var';
-    echo $anyVar;
+    // echo $anyVar;
 
-  var_dump($anyVar);
+  // var_dump($anyVar);
 
   $decimalInt = 150; //десятичное число
   $octimalInt = 0123; //восьмиричное число
@@ -16,6 +16,12 @@
   $anotherPower = 3.4e-4 ;//можно так
 
   $stringWithDouble = "I have number $simple";
+  $success = true;
+  var_dump($success);
+  var_dump($success !== false);
+  // var_dump($success);
+  // var_dump($success);
+
   ?>
 </pre>
 <ul>
@@ -63,7 +69,13 @@
   </li>
 
 </ul>
-<form method="POST" action="sayhello.php">
+
+<div>
+    <?php if (isset($_POST['user'])) :?>
+        <?= $_POST['user'] ?>
+    <?php endif ?>
+</div>
+<form method="POST" action="/">
 Your Name: <input type="text" name="user" />
 <br/>
 <button type="submit"">Say Hello</button>
