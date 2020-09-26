@@ -1,82 +1,12 @@
 
-<pre>
-  <?php
-    $anyVar = 'Hello any var';
-    // echo $anyVar;
-
-  // var_dump($anyVar);
-
-  $decimalInt = 150; //десятичное число
-  $octimalInt = 0123; //восьмиричное число
-  $hexadecInt = 0xAF3; //шестнадцатиричное число
-
-  //определение чисел с плавающей точкой
-  $simple = 1.34; //простой способ
-  $power = 3.4e5; //3.4 * 10 в 5 степени
-  $anotherPower = 3.4e-4 ;//можно так
-
-  $stringWithDouble = "I have number $simple";
-  $success = true;
-  var_dump($success);
-  var_dump($success !== false);
-  // var_dump($success);
-  // var_dump($success);
-
-  ?>
-</pre>
-<ul>
-  <li>
-    <a href="chapter 1-2/001_variables.php">001_variables</a>
-  </li>
-  <li>
-    <a href="chapter 1-2/002_variables.php">002_variables</a>
-  </li>
-  <li>
-    <a href="chapter 1-2/arrays.php">Arrays</a>
-  </li>
-  <li>
-    <a href="chapter 1-2/001_simple_arrays.php">001_simple_arrays</a>
-  </li>
-  <li>
-    <a href="chapter 1-2/002_multy_arrays.php">002_multy_arrays</a>
-  </li>
-  <li>
-    <a href="chapter 1-2/003_data_in_arrays.php">003_data_in_arrays</a>
-  </li>
-  <li>
-    <a href="chapter 1-2/const.php">Константы</a>
-  </li>
-  <li>
-    <a href="chapter 1-2/global_arrays.php">Глобальные массивы</a>
-  </li>
-  <li>
-    <a href="chapter 1-2/operators.php">Операторы</a>
-  </li>
-  <li>
-    <a href="chapter 1-2/conditions.php">Условия, циклы и т.п. конструкции</a>
-  </li>
-  <li>
-    <a href="chapter 1-2/001_if_else.php">Д.з Управляющие конструкции 1</a>
-  </li>
-  <li>
-    <a href="chapter 1-2/002_switch.php">Д.з Управляющие конструкции 2</a>
-  </li>
-  <li>
-    <a href="chapter 1-2/003_cycles.php">Д.з Управляющие конструкции 3</a>
-  </li>
-  <li>
-    <a href="chapter 1-2/file/form.php">Form</a>
-  </li>
-
-</ul>
-
-<div>
-    <?php if (isset($_POST['user'])) :?>
-        <?= $_POST['user'] ?>
-    <?php endif ?>
-</div>
-<form method="POST" action="/">
-Your Name: <input type="text" name="user" />
-<br/>
-<button type="submit"">Say Hello</button>
-</form>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <p> <a href="/form_file.php">Загрузка файлов</a> </p>
+        <p> <a href="/upload.php">Просмотр загруженных файлов</a> </p>
+    </body>
+</html>
