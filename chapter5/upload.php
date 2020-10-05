@@ -14,7 +14,7 @@
         <div>
             <table>
                 <tbody>
-                    <form action="<?= $_SERVER['PHP_SELF']  ?>" method="post">
+                    <form  method="post">
 
                     <?php $files = withoutDir(scandir($uploadPath)); ?>
                     <?php foreach ($files as $file): ?>

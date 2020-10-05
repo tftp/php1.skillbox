@@ -1,5 +1,5 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/include/config.php';
 
 if (isset($_POST['upload'])) {
     $countFiles = 0;

@@ -1,8 +1,7 @@
 <?php
 
-// echo "qwert";
-include $_SERVER['DOCUMENT_ROOT'] . '/config.php';
-include $_SERVER['DOCUMENT_ROOT'] . '/helpers.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/include/config.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/include/helpers.php';
 
     $response = [];
     $countFiles = 0;
@@ -22,7 +21,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/helpers.php';
     } else {
         $response["errors"][] = 'Недопустимое количество файлов';
     }
-    $response["count"] = "{$countFiles} файлов загружено";
+    $response["count"][] = "{$countFiles} файлов загружено";
 
     echo json_encode($response);
-    // echo json_encode($_FILES);

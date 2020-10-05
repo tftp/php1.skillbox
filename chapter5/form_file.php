@@ -29,8 +29,8 @@
              if(this.files.length > 5){
                 alert("Слишком много файлов!");
                 this.value = "";
-             };
-         };
+             }
+         }
          </script>
     </body>
 </html>
