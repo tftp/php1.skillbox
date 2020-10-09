@@ -1,0 +1,46 @@
+Основные операции для работы с таблицами
+  create table if not exist `mydb`.`products` (
+    `id` INT NOT NULL auto_increment,
+    `name` VARCHAR(255) NOT NULL,
+    `description` TEXT NULL,
+    `price` DECIMAL(10, 2) NOT NULL,
+    `count` INT NOT NULL,
+    PRIMARY_KEY(`id`)
+  );
+
+  describe `mydb`.`products`; //просмотр созданой таблицы
+
+  use `mydb`; // команда устанавливает mydb для работы по умолчанию, чтобы не указывать длиную запись `mydb`.`products`
+
+  alter table products rename products_archive; //переименование таблицы
+
+  show tables; //выводит все таблицы
+
+  alter table products_archive add discount DECIMAL NOT NULL; //добавляем столбец в таблицу
+
+  alter table products_archive modify discount INT NOT NULL; //изменяем тип существующего столбца
+
+  alter table products_archive change column discount discount_new INT NULL; //изменяем имя столбца
+
+  alter table products_archive drop column discount_new; //удаляем столбец
+
+Связываем таблицы
+  сначала создадим таблицу
+    create table if not exist `stock` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    'name' VARCHAR(255) NOT NULL,
+    PRIMARY_KEY (`id`),
+    UNIQUE INDEX `id_UNIQUE` (`id` ASC) //создание индекса на уникальность
+    );
+  в таблицу products добавим внешний ключ на таблицу stock
+    ALTER TABLE `products` ADD COLUMN `stock_id` INT NOT NULL AFTER `count`;
+  создаем связь:
+    ALTER TABLE `products`
+    ADD INDEX `c_stock_id_idx` (`stock_id` ASC);
+    ALTER TABLE `products` ADD CONSTRAINT `c_stock_id`
+      FOREIGN KEY(`stock_id`)
+      REFERENCES `stock` (`id`)
+      ON DELETE CASCADE
+      ON UPDATE CASCADE;
+
+    

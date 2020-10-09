@@ -1,0 +1,18 @@
+Вывод информации о таблицах:
+  show tables;
+
+Создание пользователей и разграничение прав
+  create user 'testUser' identified by 'password';
+
+  grant all privileges on *.* to 'testUser';//*.* означает все базы данных и все таблицы в них
+
+  revoke select on *.* from 'testUser'; //удаляем права на select для пользователя testUser по всеи базам и таблицам в них
+
+  drop user 'testUser'; //удаляем пользователя
+
+Создание БД
+  create database if not exist mydb character set utf8 collate utf8_general_ci;
+
+  drop database if exist mydb; // удаление БД
+
+  show databases; //посмотреть список существующим БД
