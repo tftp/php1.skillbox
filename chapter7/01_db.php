@@ -4,6 +4,9 @@ $user = 'root';
 $password = 'qwe1rty2';
 $dbname = 'mysql';
 
+echo $host;
+var_dump($user);
+
 $connect = mysqli_connect($host, $user, $password, $dbname);
 
 if (mysqli_connect_errno()) {
