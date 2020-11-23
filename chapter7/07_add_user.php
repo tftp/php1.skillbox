@@ -21,7 +21,7 @@ if (mysqli_connect_errno()) {
     $result = mysqli_query(
         $connect,
         "insert into users (surname, name, email, telefon, password)
-        values ('Admin', 'Admin', 'admin@localhost', '84951111101', '" . $hash . "')"); //заполняем stock
+        values ('Teacher', 'Teacher', 'teacher@localhost', '84951111103', '" . $hash . "')"); //заполняем stock
 
         var_export($result);
 
