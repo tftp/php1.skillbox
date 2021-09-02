@@ -73,4 +73,9 @@ empty(-1) //false
 
 Математические функции [здесь](https://www.php.net/manual/ru/ref.math.php)
 
+Модули для работы с датой и временем [здесь](https://www.php.net/manual/ru/refs.calendar.php) и Функции даты и времени [здесь](https://www.php.net/manual/ru/ref.datetime.php#ref.datetime)
+
+Функции для работы со строками [Здесь](https://www.php.net/manual/ru/ref.strings.php)
+
+
 
