@@ -29,10 +29,48 @@ ClassName::class	Полное имя класса.
 ## Подключение файлов
 Подключает абсолютный путь от корня ОС:
 ```
-incluse __DIR__ . '/var.php'
+include __DIR__ . '/var.php'
 ```
 Используя данные сервера:
 ```
-incluse $_SERVER['DOCUMENT_ROOT'] . '/var.php'
+include $_SERVER['DOCUMENT_ROOT'] . '/var.php'
 ```
+## Функции для работы с переменными, массивами, математические функции
+
+```
+is_array()
+is_bool()
+
+is_float()
+is_double()
+is_real()
+
+is_int()
+is_integer()
+is_long()
+
+is_null()
+
+is_object()
+
+is_scalar()
+
+is_string()
+
+isset()
+
+empty()
+
+empty([]) //true
+empty($c) //true
+empty([false]) //false
+empty("")//true
+empty("0")//true
+empty(0)//true
+empty(-1) //false
+```
+Познакомится с функциями массивов можно [здесь](https://www.php.net/manual/ru/ref.array.php)
+
+Математические функции [здесь](https://www.php.net/manual/ru/ref.math.php)
+
 
