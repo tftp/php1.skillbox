@@ -85,5 +85,8 @@ empty(-1) //false
  - [PSR-3](https://svyatoslav.biz/misc/psr_translation/#_PSR-3) – Интерфейс протоколирования
  - [PSR-4](https://svyatoslav.biz/misc/psr_translation/#_PSR-4) – Улучшенная автозагрузка
 
+## Протокол HTTP/HTTPS
+ - [header](https://www.php.net/manual/ru/function.header) — Отправка HTTP-заголовка
+ - [http_response_code](https://www.php.net/manual/ru/function.http-response-code.php) — Получает или устанавливает код ответа HTTP
 
 
