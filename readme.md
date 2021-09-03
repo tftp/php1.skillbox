@@ -77,5 +77,13 @@ empty(-1) //false
 
 Функции для работы со строками [Здесь](https://www.php.net/manual/ru/ref.strings.php)
 
+## Перевод стандартов PSR-0, PSR-1, PSR-2, PSR-3, PSR-4
+
+ - [PSR-0](https://svyatoslav.biz/misc/psr_translation/#_PSR-0) – Стандарт автозагрузки
+ - [PSR-1](https://svyatoslav.biz/misc/psr_translation/#_PSR-1) – Базовый стандарт оформления кода
+ - [PSR-2](https://svyatoslav.biz/misc/psr_translation/#_PSR-2) – Рекомендации по оформлению кода
+ - [PSR-3](https://svyatoslav.biz/misc/psr_translation/#_PSR-3) – Интерфейс протоколирования
+ - [PSR-4](https://svyatoslav.biz/misc/psr_translation/#_PSR-4) – Улучшенная автозагрузка
+
 
 
